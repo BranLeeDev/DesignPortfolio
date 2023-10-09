@@ -45,4 +45,12 @@
 }
 
 @media screen and (width >= $breakpoint-desktops) {
+  .main__section {
+    .section__a {
+      transition: background-color 0.3s ease-in-out;
+    }
+    .section__a:hover {
+      background-color: #f6a560;
+    }
+  }
 }
