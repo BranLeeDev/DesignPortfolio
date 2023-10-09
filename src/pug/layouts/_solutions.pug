@@ -6,14 +6,14 @@
 -const motion = {title: "Motion Graphics", image:"https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/FrontendMentor/DesignPortfolio/e6dkdopqo3zpwljnrr1e"}
 -const solutions = [design, ux, apps, illus, photo, motion]
 
-section
-  h2 Design solutions made easy
-  p
+section.main__section.main__section--solutions
+  h2.section__h2 Design solutions made easy
+  p.section__p
     |With over ten years of experience in various design disciplines,
     |I&apos;m your one-stop shop for your design needs.
-  ul 
+  ul.section__ul 
     each item in solutions
-      li
-        article 
-          h3=item.title
-          img(src=item.image, alt=item.title + " logo")
+      li.ul__li
+        article.li__article 
+          h3.article__h3=item.title
+          img(src=item.image, alt=item.title + " logo").li__article

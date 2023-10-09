@@ -17,14 +17,15 @@ html(lang="en")
     // Styles
     link(rel="stylesheet" href="/src/css/styles.css")
   body
-    header 
-      h1 Amy
-      +menu
-    main 
-      include layouts/_solutions.pug
-      include layouts/_about-me.pug
-      include layouts/_my-work.pug
-      include layouts/_call-me.pug
-    footer 
-      +menu
+    div.content-layout 
+      header.header 
+        h1.header__title Amy
+        +menu("header")
+      main.main 
+        include layouts/_solutions.pug
+        include layouts/_about-me.pug
+        include layouts/_my-work.pug
+        include layouts/_call-me.pug
+      footer.footer 
+        +menu("footer")
     script(type="module" src="/src/typescript/main.ts") 
