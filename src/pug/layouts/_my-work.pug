@@ -1,0 +1,10 @@
+-const images = [{title: "graphic design", image: "https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/FrontendMentor/DesignPortfolio/vzp7xo5wfnxa2mfydhlm"},  {title: "blue tapestry", image: "https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/FrontendMentor/DesignPortfolio/jynxr6rxfkwm8tn2ji6r"}, {title: "newspaper design", image: "https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/FrontendMentor/DesignPortfolio/pt45gu0ubi2ngai1306r"}, {title: "mobile design", image: "https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/FrontendMentor/DesignPortfolio/k1jlvxkzkxajycifqmlk"}, {title: "blue x design", image: "https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/FrontendMentor/DesignPortfolio/orrsxyz8jrcmm9mnnenn"}]
+
+section 
+  .swiper
+    ul.swiper-wrapper
+      each item in images
+        li.swiper-slide 
+          img(src=item.image, alt="Reference image of" + item.title)
+    button.swiper-button-prev
+    button.swiper-button-next
