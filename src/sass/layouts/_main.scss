@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
+    max-width: 69.375em;
   }
   .main {
     @include flexColCenter;
@@ -20,6 +21,7 @@
     width: 100%;
     .main__section {
       width: 90%;
+      max-width: 69.375em;
     }
     .main__section--my-work {
       width: 100%;
@@ -40,4 +42,7 @@
   .section__a {
     @include button-link(#eb7565);
   }
+}
+
+@media screen and (width >= $breakpoint-desktops) {
 }

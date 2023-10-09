@@ -25,3 +25,17 @@
     justify-self: center;
   }
 }
+
+@media screen and (width >= $breakpoint-desktops) {
+  .main__section--call-me {
+    grid-template-areas:
+      "title link"
+      "text link";
+    grid-template-rows: repeat(2, max-content);
+    padding: 5em 4em;
+    .section__a {
+      align-self: center;
+      justify-self: flex-end;
+    }
+  }
+}

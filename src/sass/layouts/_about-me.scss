@@ -30,3 +30,33 @@
     grid-area: link;
   }
 }
+
+@media screen and (width >= $breakpoint-tablets) {
+  .main__section--about-me {
+    position: relative;
+    grid-template-areas:
+      "img title"
+      "img title"
+      "img text"
+      "img text"
+      "img link"
+      "img link";
+    .section__img {
+      position: absolute;
+      top: 0;
+      left: -25%;
+      width: 100%;
+      min-height: 22em;
+    }
+  }
+}
+
+@media screen and (width >= 68.75em) {
+  .main__section--about-me {
+    .section__img {
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+  }
+}

@@ -134,3 +134,22 @@
     }
   }
 }
+
+@media screen and (width >= $breakpoint-tablets) {
+  .main__section--solutions {
+    .section__ul {
+      grid-template-areas:
+        "design design ui_ux apps"
+        "design design ui_ux apps"
+        "design design illus illus"
+        "design design illus illus"
+        "photo photo motion motion"
+        "photo photo motion motion";
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .section__p {
+      max-width: 40em;
+      align-self: center;
+    }
+  }
+}
