@@ -1,0 +1,8 @@
+.header__img {
+  width: 3em;
+  height: 3em;
+}
+
+.header__a {
+  @include button-link($bg-button);
+}

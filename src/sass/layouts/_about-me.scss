@@ -1,0 +1,32 @@
+.main__section--about-me {
+  display: grid;
+  grid-template-areas:
+    "img img"
+    "img img"
+    "img img"
+    "title title"
+    "text text"
+    "link link";
+  grid-template-rows: repeat(6, max-content);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 1.5em;
+  .section__img {
+    grid-area: img;
+    width: 81%;
+    max-width: 23em;
+    margin-bottom: 1em;
+    object-fit: contain;
+  }
+  .section__h2 {
+    grid-area: title;
+    font-size: typographyRes(1.625rem, 1.4rem, 1.25vw, 2.5rem);
+    text-align: center;
+  }
+  .section__p {
+    grid-area: text;
+  }
+  .section__a {
+    grid-area: link;
+  }
+}

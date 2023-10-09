@@ -1,0 +1,43 @@
+.content-layout {
+  @include flexColCenter;
+  gap: 3em;
+  min-width: 20em;
+  width: 100%;
+  min-height: 20em;
+  height: max-content;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  overflow-x: hidden;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  .main {
+    @include flexColCenter;
+    gap: 6.25em;
+    width: 100%;
+    .main__section {
+      width: 90%;
+    }
+    .main__section--my-work {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    @extend .header;
+  }
+}
+
+.main__section {
+  .section__p {
+    font-size: typographyRes(0.875rem, 0.75rem, 0.6vw, 1.125rem);
+    line-height: 1.6;
+    text-align: center;
+  }
+  .section__a {
+    @include button-link(#eb7565);
+  }
+}

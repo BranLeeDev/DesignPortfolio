@@ -1,0 +1,27 @@
+.main__section--call-me {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "text text"
+    "link link";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  row-gap: 1.625em;
+  padding: 3em 1.5em;
+  border-radius: 0.625em;
+  background-color: #030303;
+  .section__h2 {
+    grid-area: title;
+    font-size: typographyRes(1.5rem, 1.2rem, 1.2vw, 2rem);
+    text-align: center;
+    color: #fff7f0;
+  }
+  .section__p {
+    grid-area: text;
+    color: #fff7f0;
+  }
+  .section__a {
+    grid-area: link;
+    justify-self: center;
+  }
+}

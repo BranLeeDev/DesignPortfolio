@@ -1,0 +1,3 @@
+@function typographyRes($min, $base, $increase, $max) {
+  @return clamp($min, $base + $increase, $max);
+}
