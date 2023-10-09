@@ -7,6 +7,13 @@
   @include button-link($bg-button);
 }
 
+@media screen and (width >= $breakpoint-tablets) {
+  .header__img {
+    width: 4em;
+    height: 4em;
+  }
+}
+
 @media screen and (width >= $breakpoint-desktops) {
   .header__a {
     transition: background-color 0.3s ease-in-out;
