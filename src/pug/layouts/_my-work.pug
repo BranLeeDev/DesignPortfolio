@@ -7,5 +7,5 @@ section.main__section.main__section--my-work
       each item in images
         li.swiper-slide.ul__li 
           img(src=item.image, alt="Reference image of" + item.title).li__img
-    button.swiper-button-prev.div__button
-    button.swiper-button-next.div__button
+    button(aria-label="Next Image").swiper-button-prev.div__button
+    button(aria-label="Previous Image").swiper-button-next.div__button
