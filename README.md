@@ -19,7 +19,11 @@ Este proyecto fue desarrollado como parte del desafío de Frontend Mentor. Se ha
 
 ## Enlace del proyecto desplegado
 
-[DESIGN PORTFOLIO](https://bmi-calculator-ochre-phi.vercel.app/)
+[DESIGN PORTFOLIO](https://design-portfolio-puce.vercel.app/)
+
+## Vista Previa 
+
+![Vista Previa](https://res.cloudinary.com/dbbixakcl/image/upload/f_auto,q_auto/v1/FrontendMentor/ah0sp2dva3ahs4ylxejg)
 
 ## Autor
 
